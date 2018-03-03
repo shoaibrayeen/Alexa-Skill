@@ -1,0 +1,155 @@
+{
+  "languageModel": {
+    "types": [
+      {
+        "name": "LIST_OF_COLORS",
+        "values": [
+          {
+            "id": null,
+            "name": {
+              "value": "green",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "red",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "blue",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "orange",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "gold",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "silver",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "yellow",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "black",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "white",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "grey",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "cyan",
+              "synonyms": []
+            }
+          }
+        ]
+      }
+    ],
+    "intents": [
+      {
+        "name": "AMAZON.CancelIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.HelpIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.StopIntent",
+        "samples": []
+      },
+      {
+        "name": "MyColorIsIntent",
+        "samples": [
+          "my favorite color is {Color}"
+        ],
+        "slots": [
+          {
+            "name": "Color",
+            "type": "LIST_OF_COLORS"
+          }
+        ]
+      },
+      {
+        "name": "WhatsMyColorIntent",
+        "samples": [
+          "what's my favorite color",
+          "what is my favorite color",
+          "what's my color",
+          "what is my color",
+          "my color",
+          "my favorite color",
+          "get my color",
+          "get my favorite color",
+          "give me my favorite color",
+          "give me my color",
+          "what my color is",
+          "what my favorite color is",
+          "yes",
+          "yup",
+          "sure",
+          "yes please"
+        ],
+        "slots": []
+      }
+    ],
+    "invocationName": "sample skill"
+  },
+  "dialog": {
+    "intents": [
+      {
+        "name": "MyColorIsIntent",
+        "confirmationRequired": false,
+        "prompts": {},
+        "slots": [
+          {
+            "name": "Color",
+            "type": "LIST_OF_COLORS",
+            "elicitationRequired": true,
+            "confirmationRequired": false,
+            "prompts": {}
+          }
+        ]
+      }
+    ]
+  }
+}
