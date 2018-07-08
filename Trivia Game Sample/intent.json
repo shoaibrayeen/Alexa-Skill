@@ -1,0 +1,88 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "test trivia",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AnswerIntent",
+                    "slots": [
+                        {
+                            "name": "Answer",
+                            "type": "LIST_OF_ANSWERS"
+                        }
+                    ],
+                    "samples": [
+                        "AnswerIntent {Answer} is my answer",
+                        "AnswerIntent is it {Answer}",
+                        "AnswerIntent my answer is {Answer}",
+                        "AnswerIntent the answer is {Answer}"
+                    ]
+                },
+                {
+                    "name": "AnswerOnlyIntent",
+                    "slots": [
+                        {
+                            "name": "Answer",
+                            "type": "LIST_OF_ANSWERS"
+                        }
+                    ],
+                    "samples": [
+                        "AnswerOnlyIntent {Answer}"
+                    ]
+                },
+                {
+                    "name": "DontKnowIntent",
+                    "slots": [],
+                    "samples": [
+                        "DontKnowIntent i don't know that one",
+                        "DontKnowIntent i don't know this question",
+                        "DontKnowIntent who knows",
+                        "DontKnowIntent i don't know that",
+                        "DontKnowIntent skip",
+                        "DontKnowIntent don't know",
+                        "DontKnowIntent i don't know"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "LIST_OF_ANSWERS",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "4"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "3"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "2"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "1"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
