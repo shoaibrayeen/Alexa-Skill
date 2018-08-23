@@ -1,0 +1,33 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "prime learn",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "whatismathfun",
+                    "slots": [],
+                    "samples": [
+                        "maths fun",
+                        "tell me prime fun",
+                        "prime fun",
+                        "math fun",
+                        "tell me math fun"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}
