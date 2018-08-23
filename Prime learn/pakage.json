@@ -1,7 +1,7 @@
 {
     "interactionModel": {
         "languageModel": {
-            "invocationName": "prime learn",
+            "invocationName": "astronomy facts",
             "intents": [
                 {
                     "name": "AMAZON.CancelIntent",
@@ -16,14 +16,14 @@
                     "samples": []
                 },
                 {
-                    "name": "whatismathfun",
+                    "name": "whatisastronomyfacts",
                     "slots": [],
                     "samples": [
-                        "maths fun",
-                        "tell me prime fun",
-                        "prime fun",
-                        "math fun",
-                        "tell me math fun"
+                        "astronomy facts",
+                        "tell me astronomy facts",
+                        "astronomy",
+                        "facts",
+                        "tell me astronomical facts"
                     ]
                 }
             ],
