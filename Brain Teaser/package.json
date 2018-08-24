@@ -1,0 +1,38 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "brain teaser",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "factIntent",
+                    "slots": [],
+                    "samples": [
+                        "brain teaser",
+                        "tell me a brain teaser",
+                        "tell me",
+                        "tell me brain teaser",
+                        "please",
+                        "yes",
+                        "fact",
+                        "brain fact",
+                        "brain teaser fact",
+                        "new fact"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}
