@@ -13,7 +13,7 @@ def onIntent(intentRequest, session):
              
     intent = intentRequest['intent']
     intentName = intentRequest['intent']['name']
-    if intentName == "whatismathfun":
+    if intentName == "global_warming":
         return fun_math(intent, session)
     elif intentName == "AMAZON.HelpIntent":
         return welcomeuser()
@@ -28,26 +28,26 @@ def onSessionEnd(sessionEndedRequest, session):
 def welcomeuser():
     sessionAttributes = {}
     cardTitle = " Hello"
-    speechOutput =  "Hello , Welcome to prime learn! " \
-                    "You can know interesting facts about maths by saying Tell me math fun"
-    repromptText =  "You can know interesting facts about maths by saying Tell me math fun"
+    speechOutput =  "Hello , Welcome to global warming facts! " \
+                    "You can know about global warming by saying tell me about Global Warming"
+    repromptText =  "You can know about global warming by saying tell me about Global Warming"
     shouldEndSession = False
     
     return buildResponse(sessionAttributes, buildSpeechletResponse(cardTitle, speechOutput, repromptText, shouldEndSession))
 
-def fun_math(intent, session):
+def global_warming(intent, session):
     import random
     index = random.randint(0,len(prime)-1)
     cardTitle = intent['name']
     sessionAttributes = {}
-    speechOutput = "Prime learn that is actually a math fact is that " + prime[index] 
-    repromptText = "You can know interesting facts about maths by saying Tell me math fun"
+    speechOutput = "Global Warming:\n" + prime[index] 
+    repromptText = "You can know interesting facts about global warming by saying tell me about about global warming"
     shouldEndSession = True                   
     return buildResponse(sessionAttributes, buildSpeechletResponse(cardTitle, speechOutput, repromptText, shouldEndSession))
 
 def handleSessionEndRequest():
     cardTitle = "Session Ended"
-    speechOutput = "Thank you for using prime learn Alexa Skills Kit. " \
+    speechOutput = "Thank you for using Global Warming Alexa Skills Kit. " \
                     "Have a great time! "
     shouldEndSession = True
     return buildResponse({}, buildSpeechletResponse(cardTitle, speechOutput, None, shouldEndSession))
@@ -84,36 +84,18 @@ def buildResponse(sessionAttr , speechlet):
 
 
 
-prime = [ "There is no largest prime number." ,
-          "The sum of the interior angles of a triangle is 180 degrees" ,
-          "There is a largest prime number in the integers modulo n",
-          "The Fibonacci sequence is encoded in the number 1/89" ,
-          "If you write out pi to two decimal places, backwards it spells pie." ,
-          "A French word for pie chart is camembert." ,
-          "The spiral shapes of sunflowers follow a Fibonacci sequence.",
-          "A pizza that has radius z and height a has volume Pi times z square multiply by a." ,
-          "The word hundred is derived from the word hundrath, which actually means 120 and not 100." ,
-          "In a room of just 23 people there’s a 50% chance that two people have the same birthday." ,
-          "Zero is the only number that can't be represented in Roman numerals.",
-          "six multiply by 9 and then add six and nine to them is equal to sixty nine." ,
-          "We tend to think of odd numbers as male and even numbers as female." ,
-          "If you shuffle a pack of cards properly, chances are that exact order has never been seen before in the whole history of the universe." ,
-          "Zero is an even number.",
-          "There's not enough space in the known universe to write out a googolplex on paper.",
-          "The most popular favourite number is 7.",
-          "7 also shows up a lot in human culture.",
-          "The number 4 is considered unlucky in much of Asia.",
-          "Cicadas use prime numbers as an evolutionary strategy.",
-          "10 factorial seconds is exactly 6 weeks." ,
-          "Take any four digit number, follow these steps, and you'll end up with 6174." ,
-          "555 is used by some in Thailand as slang for hahaha, because the word for five is pronounced ha." ,
-          " after a million, billion and trillion , A quadrillion, quintillion, sextillion, septillion, octillion, nonillion, decillion and undecillion come" ,
-          "Plus and Minus symbols were used as early as 1489 A.D" ,
-          "2 and 5 are the only primes that end in 2 or 5" ,
-          "An icosagon is a shape with 20 sides" ,
-          "'FOUR' is the only number in the English language that is spelt with the same number of letters as the number itself" ,
-          "Have you ever noticed that the opposite sides a die always add up to seven." ,
-          "Trigonometry is the study of the relationship between the angles of triangles and their sides",
-          "Abacus is considered the origin of the calculator" ,
-          "A 'jiffy' is an actual unit of time for 1/100th of a second"
+prime = [ "Global warming, also referred to as climate change, is the observed century-scale rise in the average temperature of the Earth's climate system and its related effects.",
+" Global warming occurs when carbon dioxide (CO2) and other air pollutants and greenhouse gases collect in the atmosphere and absorb sunlight and solar radiation that have bounced off the earth’s surface, trap the heat and cause the planet to get hotter. That's what's known as the greenhouse effect.",
+"Global warming causes melting glaciers, early snowmelt, rising sea levels and severe droughts will cause more dramatic water shortages and increase the risk of wildfires.",
+"Forests, farms, and cities will face troublesome new pests, heat waves, heavy downpours, and increased flooding. All those factors will damage or destroy agriculture and fisheries.",
+"Because of global warming, allergies, asthma, and infectious disease outbreaks will become more common due to increased growth of pollen-producing ragweed, higher levels of air pollution, and the spread of conditions favorable to pathogens and mosquitoes.",
+"In order to avoid the worst effects of climate change, we together with other countries, need to reduce our dependence on fossil fuels and start using clean energy instead.",
+"To control Global Warming, you should power your home with renewable energy like solar or wind energy.",
+"Saving water reduces carbon pollution, too. That's because it takes a lot of energy to pump, heat, and treat your water. So take shorter showers, turn off the tap while brushing your teeth, and switch to WaterSense-labeled fixtures and appliances.",
+"Gas-smart cars, such as hybrids and fully electric vehicles, save fuel and money and hence help to control global warming.",
+"Global Warming Cause: Methane emissions from animals, agriculture such as rice paddies, and from Arctic seabeds.",
+"Global Warming Cause: Deforestation, especially tropical forests for wood, pulp, and farmland.",
+"Global Warming has lead to Widespread extinction of species.",
+"To save resources, you shouldn't use more energy than you need.",
+"When you buy new energy-efficient appliances and electronics, it's important to dispose of the old ones in a planet-friendly way to save energy."
         ]
