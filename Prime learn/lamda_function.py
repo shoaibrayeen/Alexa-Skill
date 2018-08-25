@@ -14,7 +14,7 @@ def onIntent(intentRequest, session):
     intent = intentRequest['intent']
     intentName = intentRequest['intent']['name']
     if intentName == "global_warming":
-        return fun_math(intent, session)
+        return global_warming(intent, session)
     elif intentName == "AMAZON.HelpIntent":
         return welcomeuser()
     elif intentName == "AMAZON.CancelIntent" or intentName == "AMAZON.StopIntent":
