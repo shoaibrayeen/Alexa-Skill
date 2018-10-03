@@ -81,7 +81,7 @@ def set_color_in_session(intent, session):
     user.
     """
 
-    card_title = intent['name']
+    card_title = "Storing Color"
     session_attributes = {}
     should_end_session = False
 
