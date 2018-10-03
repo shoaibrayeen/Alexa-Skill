@@ -38,7 +38,7 @@ def welcomeuser():
 def fun_math(intent, session):
     import random
     index = random.randint(0,len(prime)-1)
-    cardTitle = intent['name']
+    cardTitle = "Hello"
     sessionAttributes = {}
     speechOutput = "Prime learn that is actually a math fact is that " + prime[index] 
     repromptText = "You can know interesting facts about maths by saying Tell me math fun"
