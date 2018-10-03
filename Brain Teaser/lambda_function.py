@@ -38,7 +38,7 @@ def welcomeuser():
 def brain_teaser(intent, session):
     import random
     index = random.randint(0,len(brainteaser)-1)
-    cardTitle = intent['name']
+    cardTitle = "Hello"
     sessionAttributes = {}
     speechOutput = "brain teaser is that " + brainteaser[index] 
     repromptText = "You can ask me brain teaser by saying Tell me brain teaser"
