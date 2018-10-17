@@ -41,8 +41,9 @@ def brain_teaser(intent, session):
     cardTitle = "Hello"
     sessionAttributes = {}
     speechOutput = "brain teaser is that " + brainteaser[index] 
+    shouldEndSession = False
     repromptText = "You can ask me brain teaser by saying Tell me brain teaser"
-    shouldEndSession = True                    
+    shouldEndSession = False               
     return buildResponse(sessionAttributes, buildSpeechletResponse(cardTitle, speechOutput, repromptText, shouldEndSession))
 
 def handleSessionEndRequest():
