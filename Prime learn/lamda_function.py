@@ -28,7 +28,9 @@ def onSessionEnd(sessionEndedRequest, session):
 def welcomeuser():
     sessionAttributes = {}
     cardTitle = " Hello"
-    speechOutput =  "Hello , Welcome to prime learn! " \
+  
+#welcome messages
+speechOutput =  "Hello , Welcome to prime learn! " \
                     "You can know interesting facts about maths by saying Tell me math fun"
     repromptText =  "You can know interesting facts about maths by saying Tell me math fun"
     shouldEndSession = False
@@ -82,7 +84,7 @@ def buildResponse(sessionAttr , speechlet):
         'response': speechlet
     }
 
-
+#array of facts
 
 prime = [ "There is no largest prime number." ,
           "The sum of the interior angles of a triangle is 180 degrees" ,
