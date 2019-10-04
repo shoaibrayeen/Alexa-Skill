@@ -27,8 +27,8 @@ def onSessionEnd(sessionEndedRequest, session):
 
 def welcomeuser():
     sessionAttributes = {}
-    cardTitle = " Hello! Namaste!"
-    speechOutput =  "Hello , Welcome to brain teaser " \
+    cardTitle = " Hello! hello!"
+    speechOutput =  "Hello , Welcome to Brain Teaser " \
                     "You can ask me brain teaser by saying Tell me brain teaser"
     repromptText =  "You can ask me brain teaser by saying Tell me brain teaser"
     shouldEndSession = False
