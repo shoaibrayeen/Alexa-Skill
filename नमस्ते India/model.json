@@ -1,0 +1,53 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "नमस्ते india",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "jokeIntent",
+                    "slots": [],
+                    "samples": [
+                        "मुझे joke सुनाओ ",
+                        "joke सुनाओ ",
+                        "कोई joke सुनाओ ",
+                        "मुझे कोई joke सुनाओ ",
+                        "Joke",
+                        "एक joke",
+                        "एक joke सुनाओ ",
+                        "Tell me a Joke"
+                    ]
+                },
+                {
+                    "name": "factIntent",
+                    "slots": [],
+                    "samples": [
+                        "कोई fact बताओ ",
+                        "एक fact बताओ ",
+                        "India के बारे में कुछ बताओ",
+                        "India का fact बताओ",
+                        "Fact",
+                        "New Fact",
+                        "Tell me Fact"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}
