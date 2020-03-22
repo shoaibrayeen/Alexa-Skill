@@ -4,7 +4,7 @@
 
 ### Useful Links
 - [Build Your First Skill](http://alexa.design/byfs)
-- [Cake Walk](http://alexa.design/cakewalk)
+- [Cake Walk - Using Amazon S3](http://alexa.design/cakewalk)
 - [Alexa Github Account](github.com/alexa)
 - [Getting Started with Alexa Skills in India](alexa.design/india)
 - [Join Alexa Slack Channel](alexadevsindia.slack.com)
